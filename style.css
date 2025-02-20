@@ -13,6 +13,7 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    outline: none; 
 }
 
 /* Контейнер для содержимого */
@@ -21,6 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    outline: none; 
 }
 
 /* Заголовок */
@@ -31,6 +33,7 @@ body {
     text-shadow: 0 0 10px #ff6666, 0 0 20px #ff6666, 0 0 30px #ff6666;
     margin-bottom: 30px;
     animation: glow 1.5s infinite alternate;
+    outline: none; 
 }
 
 /* Эффект свечения для заголовка */
