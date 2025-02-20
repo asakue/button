@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #1a1a1a, #000000); /* Градиентный фон */
+    background: linear-gradient(135deg, #1a1a1a, #000000);
     color: #e0e0e0;
     font-family: 'Orbitron', sans-serif;
     display: flex;
@@ -13,85 +13,58 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
-    outline: none; 
+     outline: none;
 }
 
-/* Контейнер для содержимого */
 .container {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    outline: none; 
+     outline: none;
 }
 
-/* Заголовок */
-.title {
-    font-size: 36px;
-    font-weight: bold;
-    color: #ff6666; /* Красный цвет */
-    text-shadow: 0 0 10px #ff6666, 0 0 20px #ff6666, 0 0 30px #ff6666;
-    margin-bottom: 30px;
-    animation: glow 1.5s infinite alternate;
-    outline: none; 
-}
-
-/* Эффект свечения для заголовка */
-@keyframes glow {
-    from {
-        text-shadow: 0 0 10px #ff6666, 0 0 20px #ff6666, 0 0 30px #ff6666;
-    }
-    to {
-        text-shadow: 0 0 20px #ff6666, 0 0 30px #ff6666, 0 0 40px #ff6666;
-    }
-}
-
-/* Круглая кнопка */
 #soundButton {
-    background: #ff6666; 
+    background: #ff6666;
     color: #fff;
     border: none;
     width: 200px;
-    height: 200px; 
-    border-radius: 50%; 
+    height: 200px;
+    border-radius: 50%;
     font-size: 20px;
     font-family: 'Orbitron', sans-serif;
     cursor: pointer;
     transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 30px rgba(255, 102, 102, 0.7); 
+    box-shadow: 0 0 30px rgba(255, 102, 102, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: absolute; /* Для центрирования */
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     outline: none; 
+    -webkit-tap-highlight-color: transparent; 
 }
 
 #soundButton:hover {
-    background: #ff4d4d; 
+    background: #ff4d4d;
     box-shadow: 0 0 50px rgba(255, 102, 102, 1);
-    outline: none;
+     outline: none;
 }
 
 #soundButton:active {
     transform: translate(-50%, -50%) scale(0.95);
-     outline: none; 
+     outline: none;
 }
 
 @media (max-width: 768px) {
-    .title {
-        font-size: 24px;
-        margin-bottom: 20px;
-         outline: none; 
-    }
-
     #soundButton {
-        width: 150px; 
+        width: 150px;
         height: 150px;
         font-size: 16px;
-        outline: none;
+         outline: none;
     }
 }
+
