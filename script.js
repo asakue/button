@@ -8,7 +8,11 @@ const sounds = [
 'sounds/sound4.mp3',
 'sounds/sound5.mp3',
 'sounds/sound6.mp3',
-'sounds/sound7.mp3'
+'sounds/sound7.mp3',
+'sounds/sound8.mp3',
+'sounds/sound9.mp3',
+'sounds/sound10.mp3',
+'sounds/sound11.mp3'
 ];
 
 soundButton.addEventListener('click', () => {
@@ -31,6 +35,7 @@ soundButton.addEventListener('click', () => {
         soundButton.textContent = 'Play Sound';
     });
 });
+
 
 
 
