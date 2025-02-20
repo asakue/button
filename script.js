@@ -1,8 +1,9 @@
 const soundButton = document.getElementById('soundButton');
 let currentAudio = null;
+let lastPlayedSoundIndex = null; // Храним индекс последнего воспроизведённого звука
 
 const sounds = [
-    'sounds/sound1.mp3',
+'sounds/sound1.mp3',
 'sounds/sound2.mp3',
 'sounds/sound3.mp3',
 'sounds/sound4.mp3',
@@ -21,7 +22,14 @@ soundButton.addEventListener('click', () => {
         currentAudio.currentTime = 0;
     }
 
-    const randomSound = sounds[Math.floor(Math.random() * sounds.length)];
+    let randomIndex;
+    do {
+        randomIndex = Math.floor(Math.random() * sounds.length);
+    } while (randomIndex === lastPlayedSoundIndex && sounds.length > 1); // Убедимся, что звуки не повторяются подряд
+
+    lastPlayedSoundIndex = randomIndex; // Сохраняем индекс текущего звука
+
+    const randomSound = sounds[randomIndex];
     currentAudio = new Audio(randomSound);
     currentAudio.play();
 
