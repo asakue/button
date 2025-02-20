@@ -1,11 +1,9 @@
-/* Сброс стилей по умолчанию */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Основные стили для body */
 body {
     background: linear-gradient(135deg, #1a1a1a, #000000); /* Градиентный фон */
     color: #e0e0e0;
@@ -47,17 +45,17 @@ body {
 
 /* Круглая кнопка */
 #soundButton {
-    background: #ff6666; /* Красный фон */
+    background: #ff6666; 
     color: #fff;
     border: none;
-    width: 200px; /* Увеличиваем размер кнопки */
-    height: 200px; /* Увеличиваем размер кнопки */
-    border-radius: 50%; /* Круглая форма */
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%; 
     font-size: 20px;
     font-family: 'Orbitron', sans-serif;
     cursor: pointer;
     transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 30px rgba(255, 102, 102, 0.7); /* Яркая тень */
+    box-shadow: 0 0 30px rgba(255, 102, 102, 0.7); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,21 +64,19 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    outline: none; /* Убираем синий квадрат при фокусе */
+    outline: none; 
 }
 
-/* Эффект при наведении на кнопку */
 #soundButton:hover {
-    background: #ff4d4d; /* Ярко-красный фон */
+    background: #ff4d4d; 
     box-shadow: 0 0 50px rgba(255, 102, 102, 1);
+    outline: none;
 }
 
-/* Эффект при нажатии на кнопку */
 #soundButton:active {
     transform: translate(-50%, -50%) scale(0.95);
 }
 
-/* Адаптация для мобильных устройств */
 @media (max-width: 768px) {
     .title {
         font-size: 24px;
@@ -88,8 +84,9 @@ body {
     }
 
     #soundButton {
-        width: 150px; /* Уменьшаем размер кнопки для мобильных */
+        width: 150px; 
         height: 150px;
         font-size: 16px;
+        outline: none;
     }
 }
